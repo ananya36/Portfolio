@@ -1,0 +1,97 @@
+/* src/index.css */
+
+/* Import slick-carousel CSS at the top */
+@import '../node_modules/slick-carousel/slick/slick.css';
+@import '../node_modules/slick-carousel/slick/slick-theme.css';
+
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Adjust carousel size */
+.slick-slider {
+  width: 80%; /* Adjust the width as needed */
+  margin: auto;
+}
+
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: "EB Garamond", serif; /* Simple, clean font */
+  background-color: #f5f5f5;
+}
+
+.page {
+  padding: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.bg-lavender {
+  background-color: #b19cd9; /* Slightly darker lavender background */
+}
+
+.bg-lavender-dark {
+  background-color: #7a5eb0; /* Darker lavender for hover */
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.text-gray-900 {
+  color: #1a202c; /* Dark gray text */
+}
+
+.text-gray-700 {
+  color: #4a5568; /* Medium gray text */
+}
+
+.border-gray-300 {
+  border-color: #e2e8f0;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.circle-div {
+  transition: transform 0.3s ease;
+}
+
+.circle-div:hover {
+  transform: scale(1.05);
+}
+
+.group-hover\:bg-lavender-dark:hover {
+  background-color: #7a5eb0;
+}
+
+.group-hover\:text-white:hover {
+  color: #ffffff;
+}
+
+.bg-darkBg {
+  background-color: #1a202c;
+}
+
+.text-darkText {
+  color: #f5f5f5;
+}
+
+.bg-darkCard {
+  background-color: #2d3748;
+}
+
+.border-darkBorder {
+  border-color: #4a5568;
+}
+
+.hover\:bg-darkHover:hover {
+  background-color: #4a5568;
+}
+
+.hover\:text-white:hover {
+  color: #ffffff;
+}
