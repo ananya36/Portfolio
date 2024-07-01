@@ -1,25 +1,15 @@
 /* src/index.css */
 
-/* Import slick-carousel CSS at the top */
 @import '../node_modules/slick-carousel/slick/slick.css';
 @import '../node_modules/slick-carousel/slick/slick-theme.css';
 
-/* Tailwind CSS directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Adjust carousel size */
-.slick-slider {
-  width: 80%; /* Adjust the width as needed */
-  margin: auto;
-}
-
-/* styles.css */
-
 body {
   margin: 0;
-  font-family: "EB Garamond", serif; /* Simple, clean font */
+  font-family: 'Montserrat', sans-serif;
   background-color: #f5f5f5;
 }
 
@@ -28,28 +18,57 @@ body {
   transition: opacity 0.5s ease-in-out;
 }
 
-.bg-lavender {
-  background-color: #b19cd9; /* Slightly darker lavender background */
+.slick-slider {
+  width: 80%;
+  margin: auto;
 }
 
-.bg-lavender-dark {
-  background-color: #7a5eb0; /* Darker lavender for hover */
+/* Color classes for the new palette */
+/* Update your index.css with the new color palette */
+/* Darkest */
+.bg-blue-900 {
+  background-color: #070f2b;
 }
 
-.bg-white {
-  background-color: #ffffff;
+/* Darker */
+.bg-blue-800 {
+  background-color: #1b1a55;
 }
 
-.text-gray-900 {
-  color: #1a202c; /* Dark gray text */
+/* Dark */
+.bg-blue-700 {
+  background-color: #535c91;
 }
 
-.text-gray-700 {
-  color: #4a5568; /* Medium gray text */
+/* Light */
+.bg-blue-600 {
+  background-color: #9290c3;
 }
 
-.border-gray-300 {
-  border-color: #e2e8f0;
+/* Lightest */
+.bg-blue-500 {
+  background-color: #c3c3e6;
+}
+
+/* Text Colors */
+.text-blue-900 {
+  color: #070f2b;
+}
+
+.text-blue-800 {
+  color: #1b1a55;
+}
+
+.text-blue-700 {
+  color: #535c91;
+}
+
+.text-blue-600 {
+  color: #9290c3;
+}
+
+.text-blue-500 {
+  color: #c3c3e6;
 }
 
 .shadow-md {
@@ -64,34 +83,49 @@ body {
   transform: scale(1.05);
 }
 
-.group-hover\:bg-lavender-dark:hover {
-  background-color: #7a5eb0;
+/* Replace <uniquifier> with a unique identifier and <weight> with your desired font weight (e.g., 400 for regular) */
+.montserrat-400 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.group-hover\:text-white:hover {
+.montserrat-custom {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bg-darkest {
+  background-color: #070f2b;
+}
+
+.text-lightest {
   color: #ffffff;
 }
 
-.bg-darkBg {
-  background-color: #1a202c;
+.text-rectangle {
+  background-color: #1b1a55;
+  border-radius: 0.5rem;
 }
 
-.text-darkText {
-  color: #f5f5f5;
+.bg-lighter {
+  background-color: #1b1a55;
 }
 
-.bg-darkCard {
-  background-color: #2d3748;
+.image-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
 }
 
-.border-darkBorder {
-  border-color: #4a5568;
-}
-
-.hover\:bg-darkHover:hover {
-  background-color: #4a5568;
-}
-
-.hover\:text-white:hover {
-  color: #ffffff;
+.image-circle-small {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  border-radius: 50%;
+  background-size: contain; /* Use 'contain' for SVGs to fit within the div */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color:#0b0b3a;; /* Adding a background color to ensure visibility */
 }

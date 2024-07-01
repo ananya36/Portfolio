@@ -5,7 +5,7 @@ import Header from '../components/Header';
 const OtherPagesLayout = ({ children }) => {
   return (
     <div>
-      <Header /> {/* Include the header */}
+      <Header /> 
       {children}
     </div>
   );
