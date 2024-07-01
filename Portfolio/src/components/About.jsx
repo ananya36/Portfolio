@@ -15,7 +15,7 @@ const About = () => {
             <p className="text-lg">
               Here is a brief introduction about myself. I am a passionate developer with skills in various technologies including React, Node.js, and more. I enjoy building visually appealing and highly functional web applications.
             </p>
-          </div>
+          </div> 
         </div>
       </div>
 
