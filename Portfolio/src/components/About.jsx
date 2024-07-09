@@ -15,13 +15,14 @@ const About = () => {
             <p className="text-lg">
               Here is a brief introduction about myself. I am a passionate developer with skills in various technologies including React, Node.js, and more. I enjoy building visually appealing and highly functional web applications.
             </p>
-          </div> 
+          </div>
         </div>
       </div>
 
       {/* Second Row */}
       <div className="flex flex-row items-center justify-center space-x-8 w-full max-w-4xl">
         <div className="w-1/2 flex justify-center">
+          <div className="image-circle" style={{ backgroundImage: 'url(./assest/techstack.jpg)' }}></div>
           <div className="text-rectangle p-4 bg-lightest">
             <h1 className="text-xl font-bold mb-4">About My Skills</h1>
             <p className="text-lg">
@@ -30,7 +31,12 @@ const About = () => {
           </div>
         </div>
         <div className="w-1/2 flex justify-center">
-          <ReactSVG src="./assest/test2.svg" className="image-circle" />
+          <div className="relative flex items-center justify-center">
+            <ReactSVG src="./assest/test2.svg" className="image-circle" />
+            <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
+              <p>React.js - A JavaScript library for building user interfaces, particularly single-page applications.</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -45,19 +51,31 @@ const About = () => {
         <div className="text-rectangle p-4 bg-lighter">
           <div className="flex flex-col space-y-4">
             <div className="flex space-x-4">
-              <div className="image-circle-small bg-lightest">
+              <div className="relative image-circle-small bg-lightest flex items-center justify-center">
                 <ReactSVG src="./assest/react-svgrepo-com.svg" className="svg-icon" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
+                  <p>React.js - A JavaScript library for building user interfaces, particularly single-page applications.</p>
+                </div>
               </div>
-              <div className="image-circle-small bg-lightest">
+              <div className="relative image-circle-small bg-lightest flex items-center justify-center">
                 <ReactSVG src="./assest/node-js-svgrepo-com.svg" className="svg-icon" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
+                  <p>Node.js - A runtime environment that allows JavaScript to be used for server-side scripting.</p>
+                </div>
               </div>
             </div>
             <div className="flex space-x-4">
-              <div className="image-circle-small bg-lightest">
-                <ReactSVG src="./assest/express.svg" className="svg-icon" />
+              <div className="relative image-circle-small bg-lightest flex items-center justify-center">
+                <ReactSVG src="./assest/nextjs-icon.svg" className="svg-icon" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
+                  <p>Next.js - A React framework for building server-side rendered and static web applications.</p>
+                </div>
               </div>
-              <div className="image-circle-small bg-lightest">
+              <div className="relative image-circle-small bg-lightest flex items-center justify-center">
                 <ReactSVG src="./assest/mysql-logo-svgrepo-com.svg" className="svg-icon" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
+                  <p>MySQL - An open-source relational database management system.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -66,19 +84,31 @@ const About = () => {
           <div className="flex flex-col space-y-4">
             <div className="flex space-x-4">
               {/* Adjust the paths below accordingly */}
-              <div className="image-circle-small bg-lightest">
-                <ReactSVG src="/path-to-your-image-7.svg" className="svg-icon" />
+              <div className="relative image-circle-small bg-lightest flex items-center justify-center">
+                <ReactSVG src="./assest/c.svg" className="svg-icon" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
+                  <p>Technology 7 - Description of Technology 7.</p>
+                </div>
               </div>
-              <div className="image-circle-small bg-lightest">
-                <ReactSVG src="/path-to-your-image-8.svg" className="svg-icon" />
+              <div className="relative image-circle-small bg-lightest flex items-center justify-center">
+                <ReactSVG src="./assest/Tensorflow_logo.svg" className="svg-icon" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
+                  <p>Technology 8 - Description of Technology 8.</p>
+                </div>
               </div>
             </div>
             <div className="flex space-x-4">
-              <div className="image-circle-small bg-lightest">
+              <div className="relative image-circle-small bg-lightest flex items-center justify-center">
                 <ReactSVG src="/path-to-your-image-9.svg" className="svg-icon" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
+                  <p>Technology 9 - Description of Technology 9.</p>
+                </div>
               </div>
-              <div className="image-circle-small bg-lightest">
+              <div className="relative image-circle-small bg-lightest flex items-center justify-center">
                 <ReactSVG src="/path-to-your-image-10.svg" className="svg-icon" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
+                  <p>Technology 10 - Description of Technology 10.</p>
+                </div>
               </div>
             </div>
           </div>
