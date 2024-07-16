@@ -147,7 +147,7 @@ body {
   right: -220px; /* Adjust distance from the circle div */
   width: 200px; /* Adjust width as needed */
   padding: 10px;
-  background-color: #1b1a55; /* Match the background color of text-rectangle */
+  background-color:#1b1a55; /* Match the background color of text-rectangle */
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   opacity: 0; /* Initially hidden */

@@ -23,21 +23,38 @@ const Projects = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-3xl font-bold mb-4">Projects</h1>
-      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project, index) => (
-          <div key={index} className="bg-white shadow-lg rounded-lg p-2 md:p-2 lg:p-3 hover:shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
-            <img src={project.imageUrl} alt={project.title} className="w-full h-24 md:h-32 lg:h-40 object-cover mb-2 rounded-lg" />
-            <h2 className="text-lg font-bold mb-1">{project.title}</h2>
-            <p className="text-gray-700 text-xs md:text-sm lg:text-sm">{project.description}</p>
-            {project.projectUrl && (
-              <div className="mt-2">
-                <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-xs md:text-sm lg:text-sm">View Project</a>
+    <div className="bg-[#070f2b] text-white min-h-screen flex flex-col items-center justify-center">
+      <h2 className="text-4xl font-bold tracking-tight text-white text-center mb-8">Projects</h2>
+      <div className="bg-[#1f1e61] p-8 rounded-lg shadow-lg w-full max-w-7xl">
+        <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-8">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="group relative bg-[#1b1a55] p-4 rounded-lg shadow-lg transform hover:scale-105 transition duration-300 ease-in-out"
+              style={{ height: '250px' }}
+            >
+              <div
+                className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 group-hover:opacity-75"
+                style={{ height: '50%' }}
+              >
+                <img
+                  src={project.imageUrl}
+                  alt={project.title}
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
-            )}
-          </div>
-        ))}
+              <div className="mt-2 flex flex-col">
+                <h3 className="text-lg font-bold">
+                  <a href={project.projectUrl} target="_blank" rel="noopener noreferrer">
+                    <span aria-hidden="true" className="absolute inset-0" />
+                    {project.title}
+                  </a>
+                </h3>
+                <p className="mt-1 text-sm text-gray-300">{project.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
