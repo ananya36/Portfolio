@@ -22,7 +22,6 @@ const About = () => {
       {/* Second Row */}
       <div className="flex flex-row items-center justify-center space-x-8 w-full max-w-4xl">
         <div className="w-1/2 flex justify-center">
-          <div className="image-circle" style={{ backgroundImage: 'url(./assest/techstack.jpg)' }}></div>
           <div className="text-rectangle p-4 bg-lightest">
             <h1 className="text-xl font-bold mb-4">About My Skills</h1>
             <p className="text-lg">
@@ -31,12 +30,7 @@ const About = () => {
           </div>
         </div>
         <div className="w-1/2 flex justify-center">
-          <div className="relative flex items-center justify-center">
-            <ReactSVG src="./assest/test2.svg" className="image-circle" />
-            <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
-              <p>React.js - A JavaScript library for building user interfaces, particularly single-page applications.</p>
-            </div>
-          </div>
+          <div className="image-circle" style={{ backgroundImage: 'url(./assest/stack-apps-layers-svgrepo-com.svg)' }}></div>
         </div>
       </div>
 
@@ -50,30 +44,30 @@ const About = () => {
       <div className="grid grid-cols-2 gap-8 w-full max-w-4xl">
         <div className="text-rectangle p-4 bg-lighter">
           <div className="flex flex-col space-y-4">
-            <div className="flex space-x-4">
+            <div className="flex justify-center space-x-8">
               <div className="relative image-circle-small bg-lightest flex items-center justify-center">
-                <ReactSVG src="./assest/react-svgrepo-com.svg" className="svg-icon" />
-                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
+                <ReactSVG src="./assest/react-svgrepo-com.svg" className="svg-icon z-0" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover:opacity-100 z-10">
                   <p>React.js - A JavaScript library for building user interfaces, particularly single-page applications.</p>
                 </div>
               </div>
               <div className="relative image-circle-small bg-lightest flex items-center justify-center">
-                <ReactSVG src="./assest/node-js-svgrepo-com.svg" className="svg-icon" />
-                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
+                <ReactSVG src="./assest/node-js-svgrepo-com.svg" className="svg-icon z-0" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover:opacity-100 z-10">
                   <p>Node.js - A runtime environment that allows JavaScript to be used for server-side scripting.</p>
                 </div>
               </div>
             </div>
-            <div className="flex space-x-4">
+            <div className="flex justify-center space-x-8">
               <div className="relative image-circle-small bg-lightest flex items-center justify-center">
-                <ReactSVG src="./assest/nextjs-icon.svg" className="svg-icon" />
-                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
+                <ReactSVG src="./assest/nextjs-icon.svg" className="svg-icon z-0" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover:opacity-100 z-10">
                   <p>Next.js - A React framework for building server-side rendered and static web applications.</p>
                 </div>
               </div>
               <div className="relative image-circle-small bg-lightest flex items-center justify-center">
-                <ReactSVG src="./assest/mysql-logo-svgrepo-com.svg" className="svg-icon" />
-                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
+                <ReactSVG src="./assest/mysql-logo-svgrepo-com.svg" className="svg-icon z-0" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover:opacity-100 z-10">
                   <p>MySQL - An open-source relational database management system.</p>
                 </div>
               </div>
@@ -82,31 +76,30 @@ const About = () => {
         </div>
         <div className="text-rectangle p-4 bg-lighter">
           <div className="flex flex-col space-y-4">
-            <div className="flex space-x-4">
-              {/* Adjust the paths below accordingly */}
+            <div className="flex justify-center space-x-8">
               <div className="relative image-circle-small bg-lightest flex items-center justify-center">
-                <ReactSVG src="./assest/c.svg" className="svg-icon" />
-                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
-                  <p>Technology 7 - Description of Technology 7.</p>
+                <ReactSVG src="./assest/c.svg" className="svg-icon z-0" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover:opacity-100 z-10">
+                  <p>C - A general-purpose programming language that is extremely popular, simple, and flexible.</p>
                 </div>
               </div>
               <div className="relative image-circle-small bg-lightest flex items-center justify-center">
-                <ReactSVG src="./assest/Tensorflow_logo.svg" className="svg-icon" />
-                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
-                  <p>Technology 8 - Description of Technology 8.</p>
+                <ReactSVG src="./assest/Tensorflow_logo.svg" className="svg-icon z-0" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover:opacity-100 z-10">
+                  <p>TensorFlow - An open-source machine learning framework.</p>
                 </div>
               </div>
             </div>
-            <div className="flex space-x-4">
+            <div className="flex justify-center space-x-8">
               <div className="relative image-circle-small bg-lightest flex items-center justify-center">
-                <ReactSVG src="/path-to-your-image-9.svg" className="svg-icon" />
-                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
+                <ReactSVG src="/path-to-your-image-9.svg" className="svg-icon z-0" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover:opacity-100 z-10">
                   <p>Technology 9 - Description of Technology 9.</p>
                 </div>
               </div>
               <div className="relative image-circle-small bg-lightest flex items-center justify-center">
-                <ReactSVG src="/path-to-your-image-10.svg" className="svg-icon" />
-                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover\:opacity-100">
+                <ReactSVG src="/path-to-your-image-10.svg" className="svg-icon z-0" />
+                <div className="technology-info absolute bg-lightest p-4 rounded-lg text-sm opacity-0 transition-opacity duration-300 hover:opacity-100 z-10">
                   <p>Technology 10 - Description of Technology 10.</p>
                 </div>
               </div>
