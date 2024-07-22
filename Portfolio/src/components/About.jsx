@@ -25,7 +25,7 @@ const About = () => {
           <div className="text-rectangle p-4 bg-lightest">
             <h1 className="text-xl font-bold mb-4">About My Skills</h1>
             <p className="text-lg">
-              I am skilled in frontend development with HTML, CSS, JavaScript, and React, creating responsive and dynamic web applications. On the backend, I excel in Node.js, Express, and MySQL for building robust server-side solutions. My design expertise includes using Canva and Figma to craft visually appealing interfaces. Additionally, I have experience in AI with TensorFlow and Scikit-learn, enabling me to integrate intelligent features into my projects.
+              I am skilled in frontend development with HTML, CSS, JavaScript, and React, creating responsive and dynamic web applications. On the backend, I excel in Next.js and MySQL for building robust server-side solutions. My design expertise includes using Canva and Figma to craft visually appealing interfaces. Additionally, I have experience in AI with TensorFlow and Scikit-learn, enabling me to integrate intelligent features into my projects.
             </p>
           </div>
         </div>
