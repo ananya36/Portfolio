@@ -109,7 +109,7 @@ body {
 }
 
 .bg-lighter {
-  background-color: #1b1a55;
+  background-color: #BB9AB1;
 }
 
 .image-circle {
@@ -127,7 +127,7 @@ body {
   background-size: contain; /* Use 'contain' for SVGs to fit within the div */
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #0b0b3a; /* Adding a background color to ensure visibility */
+  background-color: #EECEB9; /* Adding a background color to ensure visibility */
   transition: transform 0.3s ease;
 }
 
@@ -147,7 +147,7 @@ body {
   right: -220px; /* Adjust distance from the circle div */
   width: 200px; /* Adjust width as needed */
   padding: 10px;
-  background-color:#1b1a55; /* Match the background color of text-rectangle */
+  background-color:#FEFBD8; /* Match the background color of text-rectangle */
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   opacity: 0; 
